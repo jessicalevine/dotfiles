@@ -6,6 +6,7 @@ priveleges, and more. Use at your own risk.
 
 # Arch Setup
 To symlink all arch config files, execute the following command as your user:
+
 	$ sh arch/setuparch.sh
 
 It will ask you for root priveleges.
