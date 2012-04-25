@@ -1,0 +1,35 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+
+# End default ~/.bashrc
+# Begin user ~/.bashrc
+
+setterm -blength 0 # Disable PC beep in console
+
+# General aliases
+alias grep='grep --color=auto' # Automatically use color grep
+alias mkdir='mkdir -p -v' # Automatically make parent directories, list creations
+alias ..='cd ..' # .. will go one directory up
+alias svim='sudo vim' # Alias a sudo vim command
+alias rbashrc='source ~/.bashrc' # Reload the ~/.bashrc
+alias ebashrc='vim ~/.bashrc' # Edit the ~/.bashrc in vim
+
+# Pacman aliases
+alias update='sudo pacman -Syu' # Update all packages, including kernel
+alias pacins='sudo pacman -S' # Install a pacman package with root priveleges
+alias pacrm='sudo pacman -R' # Remove a pacman package with root priveleges
+alias pacsearch='pacman -Ss' # Search pacman repositories by keyword
+
+# Power control aliases
+alias shutdown='sudo shutdown -h 0'
+alias halt='sudo halt'
+alias reboot='sudo reboot'
+
+
